@@ -3,7 +3,7 @@ export default function About() {
         <section id="about" className="max-w-5xl mx-auto p-8 sm:p-12 lg:p-16 text-center bg-gradient-to-b from-blue-50 to-purple-100 rounded-lg shadow-xl my-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-emerald-800 mb-6">About Me</h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 mb-10 leading-relaxed max-w-3xl mx-auto">
-                Hello! I'm Kulsoom, a passionate software developer skilled in both web and CLI development. Currently pursuing certification in Cloud Applied Generative AI Engineering, I have hands-on experience in building scalable, responsive, and user-friendly applications.
+                Hello! I&apos;m Kulsoom, a passionate software developer skilled in both web and CLI development. Currently pursuing certification in Cloud Applied Generative AI Engineering, I have hands-on experience in building scalable, responsive, and user-friendly applications.
             </p>
             <h3 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-6">My Skills</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-8 mb-12">
