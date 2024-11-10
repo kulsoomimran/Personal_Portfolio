@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectCard = ({ title = '', Description = '', repoLink = '', command = '', deploymentLink = '', image = '' }) => {
+const ProjectCard = ({ title = '', Description = '', repoLink = '', command = '', deploymentLink = '' }) => {
   return (
     <div className="p-6 border rounded-lg shadow-md bg-customPink hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
       <h3 className="text-xl font-bold text-blue-950 mb-2">{title}</h3>
