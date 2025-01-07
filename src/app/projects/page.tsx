@@ -67,8 +67,15 @@ const Projects = () => {
         {
             title: 'Static Resume',
             Description: "My Static Resume, using HTML and CSS",
-            repoLink: 'https://github.com/kulsoomimran/Interactive_Resume_Builder/tree/main/Milestone1-2',
-            deploymentLink: 'https://interactive-resume-builderstatic-resume.vercel.app/'
+            repoLink: 'https://github.com/kulsoomimran/Interactive_Resume_Builder/tree/main/Milestone1',
+            deploymentLink: 'https://static-resume-builder-psi-ruddy.vercel.app/'
+        },
+
+        {
+            title: 'Dynamic Resume Builder',
+            Description: "A dynamic resume builder,using HTML, CSS, and Typescript(for functionality) where user puts their input and resume genereated. users can directly edit the resume and the changes are reflected immediately without reloading the page. User can also download the resume as a PDF!",
+            repoLink: 'https://github.com/kulsoomimran/Interactive_Resume_Builder/tree/main/Milestone05',
+            deploymentLink: 'https://hackathon1-milestone05.vercel.app/'
         },
 
         {
@@ -79,10 +86,39 @@ const Projects = () => {
         },
 
         {
-            title: 'Pixel Perfect Page',
-            Description: "A pixel-perfect web page based on a Figma design, using Next.Js for the framework and Tailwind.CSS for styling.",
+            title: 'My Blog Web',
+            Description: "A dynamic blog, built with Next.js and Tailwind CSS, with multiple posts using Next.js routing!!",
+            repoLink: 'https://github.com/kulsoomimran/blog-web',
+            deploymentLink: 'https://blog-website-mu-three.vercel.app/'
+        },
+
+        {
+            title: 'Nike Clone',
+            Description: "A basic e-commerce site, a Nike clone, built with Next.js and Tailwind CSS consisting of Login, Sign-in/Sign-up, Products, Products detail, Carrt and many other pages!!",
+            repoLink: 'https://github.com/kulsoomimran/UI-UX-Hackathon',
+            deploymentLink: 'https://nextjs-hackathon-sable.vercel.app/'
+        },
+
+        {
+            title: 'Pixel Perfect',
+            Description: "A Pixel Perfect website, using the provided Figma design, built with Next.js and Tailwind CSS, !",
             repoLink: 'https://github.com/kulsoomimran/Pixel-PerfectPage',
             deploymentLink: 'https://pixel-perfect-page-pied.vercel.app/'
+        },
+
+        {
+            title: 'Pixel Perfect Page 2',
+            Description: "A Pixel Perfect website, using the provided Figma design, built with Next.js and Tailwind CSS!",
+            repoLink: 'https://github.com/kulsoomimran/PixelPerfectPage02',
+            deploymentLink: 'https://pixel-perfect-page02.vercel.app/'
+        },
+
+        
+        {
+            title: 'Countdown Timer',
+            Description: " A simple countdown timer application, built with Next.js and Tailwind CSS where user can set a time duration, start, pause, and reset the timer and display the remaining time",
+            repoLink: 'https://github.com/kulsoomimran/CountdownTimer',
+            deploymentLink: 'https://vercel.com/kulsoom-imrans-projects/countdown-timer'
         },
 
     ];
