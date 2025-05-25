@@ -22,6 +22,8 @@ const config: Config = {
       imperial: ["Imperial Script", "cursive"],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };
 export default config;

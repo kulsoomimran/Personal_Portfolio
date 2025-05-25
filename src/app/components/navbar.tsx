@@ -35,6 +35,7 @@ export default function Navbar() {
       <div className="hidden md:flex space-x-6">
         <Link href="#home">Home</Link>
         <Link href="#about">About</Link>
+        <Link href="#skills">Skills</Link>
         <Link href="#projects">Projects</Link>
         <Link href="#contact">Contact</Link>
       </div>
@@ -47,6 +48,7 @@ export default function Navbar() {
         <div className="md:hidden flex flex-col items-center space-y-2 bg-customBlue p-4">
           <Link href="#home" onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="#about" onClick={() => setIsOpen(false)}>About</Link>
+          <Link href="#skills" onClick={() => setIsOpen(false)}>Skills</Link>
           <Link href="#projects" onClick={() => setIsOpen(false)}>Projects</Link>
           <Link href="#accounts" onClick={() => setIsOpen(false)}>Accounts</Link>
         </div>

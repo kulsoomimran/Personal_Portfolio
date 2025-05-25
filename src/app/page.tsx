@@ -4,6 +4,7 @@ import Home from "./home/page";
 import About from "./about/page";
 import Projects from "./projects/page";
 import Footer from "./components/footer";
+import Skills from "./skills/page";
 
 const Page = () => {
 
@@ -17,6 +18,10 @@ const Page = () => {
 
       <section>
         <About />
+      </section>
+
+      <section>
+        <Skills/>
       </section>
 
       <section>
