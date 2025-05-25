@@ -161,7 +161,7 @@ const Projects = () => {
                 "A basic e-commerce site, a Nike clone, built with Next.js and Tailwind CSS consisting of Login, Sign-in/Sign-up, Products, Product details, Cart and many other pages!",
             repoLink: "https://github.com/kulsoomimran/UI-UX-Hackathon",
             deploymentLink: "https://nextjs-hackathon-sable.vercel.app/",
-            imageSrc: "/nike.png",
+            imageSrc: "/Nike.png",
             techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
         },
         {
