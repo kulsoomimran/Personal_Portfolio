@@ -4,6 +4,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -11,18 +12,22 @@ import {
   SiTailwindcss,
   SiPython,
   SiStreamlit,
+  SiNestjs,
 } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
-    { name: "Python", icon: <SiPython className="text-blue-600" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-gray-200" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
-    { name: "JavaScript", icon: <FaJsSquare className="text-yellow-500" /> },
-    { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
-    { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-    { name: "Streamlit", icon: <SiStreamlit className="text-pink-500" /> },
+{ name: "Python", icon: <SiPython className="text-blue-600" /> },
+{ name: "Next.js", icon: <SiNextdotjs className="text-gray-200" /> },
+{ name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+{ name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
+{ name: "JavaScript", icon: <FaJsSquare className="text-yellow-500" /> },
+{ name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+{ name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+{ name: "Streamlit", icon: <SiStreamlit className="text-pink-500" /> },
+{ name: "Angular", icon: <FaAngular className="text-red-600" /> }, 
+{ name: "NestJS", icon: <SiNestjs className="text-rose-600" /> },  
+
   ];
 
   return (
