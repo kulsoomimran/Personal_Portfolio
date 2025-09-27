@@ -35,7 +35,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-[#CCCCCC] text-lg leading-relaxed">
-            I&apos;m a dedicated <span className="text-[#00FFFF] font-semibold">Full Stack Web Developer</span> with hands-on experience in building modern, responsive, and scalable applications using <span className="text-[#FF00FF] font-semibold">Next.js</span>, <span className="text-[#FF00FF] font-semibold">TypeScript</span>, and <span className="text-[#FF00FF] font-semibold">Tailwind CSS</span>. My portfolio includes dynamic frontend interfaces, CLI tools, and real-world projects integrating backend functionality and APIs.
+            I&apos;m a dedicated <span className="text-[#00FFFF] font-semibold">FrontEnd Developer</span> with hands-on experience in building modern, responsive, and scalable applications using <span className="text-[#FF00FF] font-semibold">Next.js</span>, <span className="text-[#FF00FF] font-semibold">TypeScript</span>, and <span className="text-[#FF00FF] font-semibold">Tailwind CSS</span>. My portfolio includes dynamic frontend interfaces, CLI tools, and real-world projects integrating backend functionality and APIs.
           </p>
           <p className="text-[#CCCCCC] text-lg leading-relaxed">
             I&apos;m also passionate about <span className="text-[#FFFF00] font-semibold">Artificial Intelligence</span> and <span className="text-[#FFFF00] font-semibold">Cloud Computing</span>. Currently, I’m exploring GenAI engineering, data encryption, and inventory management solutions, blending creativity with advanced technologies to deliver smart, future-focused solutions.
