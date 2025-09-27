@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import GithubLogo from '../../../public/GitHub-Logo.svg';
 import LinkedinLogo from '../../../public/LinkedIn-Logo.svg';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
                 kulsoomimran1901@gmail.com
               </a>
             </div>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <Phone size={18} className="text-indigo-400" />
               <a 
                 href="tel:+923331234567" 
@@ -31,7 +31,7 @@ const Footer = () => {
               >
                 +92 330 0821525
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
 
