@@ -94,7 +94,7 @@ const About = () => {
               {/* Content */}
               <div className="relative z-10 space-y-5">
                 <p className="text-[#CCCCCC] text-lg leading-relaxed">
-                  I'm a <span className="text-[#00FFFF] font-semibold">Front-End Developer</span> pursuing a BS in Software Engineering at the <span className="text-[#FF00FF] font-semibold">University of Karachi (UBIT '29)</span>, building a strong foundation in software development, modern web technologies, and systems design.
+                  I&apos;m a <span className="text-[#00FFFF] font-semibold">Front-End Developer</span> pursuing a BS in Software Engineering at the <span className="text-[#FF00FF] font-semibold">University of Karachi (UBIT&apos;29)</span>, building a strong foundation in software development, modern web technologies, and systems design.
                 </p>
                 
                 <p className="text-[#CCCCCC] text-lg leading-relaxed">

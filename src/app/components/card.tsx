@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title?: string;
@@ -24,9 +25,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const gradientColor = colorTheme === "indigo" 
     ? "from-indigo-500 to-indigo-600" 
     : "from-purple-500 to-purple-600";
-  const hoverBorderColor = colorTheme === "indigo" 
-    ? "group-hover:border-indigo-500/50" 
-    : "group-hover:border-purple-500/50";
   const linkHoverColor = colorTheme === "indigo"
     ? "hover:text-indigo-400"
     : "hover:text-purple-400";
@@ -42,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Image */}
       {imageSrc && (
         <div className="relative w-full h-48 overflow-hidden">
-          <img
+          <Image
             src={imageSrc}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

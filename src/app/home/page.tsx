@@ -122,7 +122,7 @@ const Home = () => {
             
             {/* Image container */}
             <div className="relative w-64 h-80 sm:w-72 sm:h-[360px] lg:w-80 lg:h-[400px] rounded-2xl overflow-hidden border-2 border-gray-700 group-hover:border-gray-600 shadow-2xl transition-all duration-500 group-hover:scale-[1.02]">
-              <img
+              <Image
                 src="/Profile.png"
                 alt="Kulsoom Imran - Profile Picture"
                 className="w-full h-full object-cover"
