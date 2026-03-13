@@ -5,6 +5,8 @@ import About from "./about/page";
 import Projects from "./projects/page";
 import Footer from "./components/footer";
 import Skills from "./skills/page";
+import Experience from "./experience/page";
+import Education from "./education/page";
 
 const Page = () => {
 
@@ -22,6 +24,14 @@ const Page = () => {
 
       <section>
         <Skills/>
+      </section>
+
+      <section>
+        <Education />
+      </section>
+
+      <section>
+        <Experience />
       </section>
 
       <section>

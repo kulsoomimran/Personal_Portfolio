@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "../components/card";
-import { motion } from "framer-motion";
+import { Code, Globe } from "lucide-react";
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState("cli");
@@ -82,6 +82,24 @@ const Projects = () => {
     ];
 
     const webProjects = [
+         {
+            title: "Todo Full-Stack Web Application",
+            description:
+                "A full\u2011stack task management app where AI assists users by intelligently adding tasks and enhancing workflow with automated suggestions.",
+            repoLink: "https://github.com/kulsoomimran/Todo-Full-Stack-Web-Application",
+            deploymentLink: "https://todo-full-stack-web-application-sigma.vercel.app/",
+            imageSrc: "/todo.png",
+            techStack: ["Next.js", "FastAPI", "PostgreSQL (Neon Serverless)", "JWT Authentication"],
+        },
+        {
+            title: "Physical AI and Humanoid Robotics",
+            description:
+                "An interactive AI\u2011enhanced platform that combines robotics knowledge with a RAG chatbot, enabling context\u2011aware answers based on the book\u2019s content.",
+            repoLink: "https://github.com/kulsoomimran/physical_ai_and_humanoid_robotics.git",
+            deploymentLink: "https://ai-and-humanoid-robotics-book.vercel.app/",
+            imageSrc: "/book.png",
+            techStack: ["Docusaurus", "FastAPI", "Cohere Embeddings", "Qdrant Vector Database"],
+        },
         {
             title: "Password Strength Meter",
             description:
@@ -177,41 +195,64 @@ const Projects = () => {
     ];
 
     return (
-        <div>
-            <div className="flex justify-center gap-4 mb-8">
-                <button
-                    onClick={() => setSelectedCategory("cli")}
-                    className={`px-5 py-2 rounded-full font-medium transition-colors duration-200 shadow-md ${selectedCategory === "cli"
-                            ? "bg-indigo-600 text-white"
-                            : "bg-gray-100 text-gray-800 hover:bg-indigo-100"
-                        }`}
-                >
-                    CLI Projects
-                </button>
-                <button
-                    onClick={() => setSelectedCategory("web")}
-                    className={`px-5 py-2 rounded-full font-medium transition-colors duration-200 shadow-md ${selectedCategory === "web"
-                            ? "bg-purple-600 text-white"
-                            : "bg-gray-100 text-gray-800 hover:bg-purple-100"
-                        }`}
-                >
-                    Web Projects
-                </button>
-            </div>
+        <div id="projects" className="bg-black min-h-screen text-white py-20 px-6 lg:px-20">
+            <div className="container mx-auto max-w-7xl">
+                <div className="text-center mb-12">
+                    <h2 
+                        data-aos="fade-down"
+                        data-aos-duration="800"
+                        className="text-4xl lg:text-5xl font-extrabold text-white mb-3"
+                    >
+                        My <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FFFF] to-[#FF00FF]">Projects</span>
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-[#00FFFF] via-[#FF00FF] to-[#FFFF00] mx-auto rounded-full"></div>
+                </div>
 
-            <div className="max-w-6xl mx-auto px-4 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                {selectedCategory === "cli" &&
-                    cliProjects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            className="h-full"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.03 }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className="h-full">
+                {/* Category Tabs */}
+                <div 
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    className="flex justify-center gap-4 mb-12"
+                >
+                    <button
+                        onClick={() => setSelectedCategory("cli")}
+                        className={`group relative px-8 py-3 rounded-xl font-semibold transition-all duration-300 overflow-hidden ${
+                            selectedCategory === "cli"
+                                ? "bg-gradient-to-r from-indigo-600 to-indigo-700 text-white scale-105 shadow-lg shadow-indigo-500/50"
+                                : "bg-gray-800 text-gray-300 hover:bg-gray-700 border-2 border-gray-700 hover:border-indigo-500"
+                        }`}
+                    >
+                        <span className="relative z-10 flex items-center gap-2">
+                            <Code className="w-5 h-5" />
+                            CLI Projects
+                        </span>
+                    </button>
+                    <button
+                        onClick={() => setSelectedCategory("web")}
+                        className={`group relative px-8 py-3 rounded-xl font-semibold transition-all duration-300 overflow-hidden ${
+                            selectedCategory === "web"
+                                ? "bg-gradient-to-r from-purple-600 to-purple-700 text-white scale-105 shadow-lg shadow-purple-500/50"
+                                : "bg-gray-800 text-gray-300 hover:bg-gray-700 border-2 border-gray-700 hover:border-purple-500"
+                        }`}
+                    >
+                        <span className="relative z-10 flex items-center gap-2">
+                            <Globe className="w-5 h-5" />
+                            Web Projects
+                        </span>
+                    </button>
+                </div>
+
+                {/* Projects Grid */}
+                <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    {selectedCategory === "cli" &&
+                        cliProjects.map((project, index) => (
+                            <div
+                                key={index}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                data-aos-duration="600"
+                                className="h-full"
+                            >
                                 <ProjectCard
                                     imageSrc={project.imageSrc}
                                     title={project.title}
@@ -221,21 +262,17 @@ const Projects = () => {
                                     colorTheme="indigo"
                                 />
                             </div>
-                        </motion.div>
-                    ))}
+                        ))}
 
-                {selectedCategory === "web" &&
-                    webProjects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            className="h-full"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.03 }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className="h-full">
+                    {selectedCategory === "web" &&
+                        webProjects.map((project, index) => (
+                            <div
+                                key={index}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                data-aos-duration="600"
+                                className="h-full"
+                            >
                                 <ProjectCard
                                     imageSrc={project.imageSrc}
                                     title={project.title}
@@ -246,8 +283,8 @@ const Projects = () => {
                                     colorTheme="purple"
                                 />
                             </div>
-                        </motion.div>
-                    ))}
+                        ))}
+                </div>
             </div>
         </div>
     );
