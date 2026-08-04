@@ -9,10 +9,16 @@ const Experience = () => {
       company: "ThreatCure",
       duration: "June 2025 \u2013 December 2025",
       description: [
-        "Designed and built 15+ interactive user interface modules using Angular and Tailwind CSS, reducing layout shifts and improving overall UX responsiveness.",
-        "Partnered with a cross-functional team of 4 engineers to integrate 25+ RESTful API endpoints, resolving critical frontend-backend latency bottlenecks.",
-        "Delivered a complete end-to-end Attendance Management SaaS dashboard (Attendify) featuring role-based access control, geo-clock-ins, and automated leave scheduling.",
-        "Optimized application bundles, achieving 90+ Lighthouse accessibility/performance scores and ensuring cross-browser styling consistency."
+        "Contributed to the development of ShieldOps, an enterprise cybersecurity threat monitoring platform, bybuilding scalable frontend features using Angular, TypeScript, and Tailwind CSS.",
+        "Developed interactive cybersecurity dashboards using D3.js, implementing responsive pie charts and bar charts that visualized real-time threat intelligence and security metrics from dynamic API data.",
+        "Built the Top Offenses dashboard module by processing and presenting security events based on severity levels, enabling analysts to identify and prioritize high-risk threats efficiently.",
+        "Designed and implemented a fully customizable event table supporting dynamic column reordering, resizing, visibility toggling, addition, removal, and replacement, providing users with a personalized data analysis experience.",
+        "Integrated RESTful APIs to fetch real-time cybersecurity events, offense summaries, histogram data, and dashboard analytics from backend services.",
+        "Processed and transformed API responses into interactive D3.js visualizations, including bar charts, pie charts and severity-based analytics for efficient threat monitoring.",
+        "Developed reusable Angular components and shared utilities to improve maintainability, reduce code duplication, and accelerate feature development across the application.",
+        "Optimized frontend performance by refactoring components, minimizing unnecessary rendering, and improving responsiveness for data-intensive dashboards.",
+        "Implemented an interactive animated particle background using tsParticles, enhancing the platform&apos;s visual appeal while maintaining smooth rendering performance.",
+        "Participated in code reviews, debugging, and continuous frontend improvements while adhering to modern Angular best practices, accessibility standards, and responsive design principles."
       ],
       techStack: ["Angular", "Tailwind CSS", "APIs", "UI/UX"]
     }

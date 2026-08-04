@@ -33,11 +33,11 @@ const Page = () => {
       </section>
 
       <section>
-        <Education />
+        <Experience />
       </section>
 
       <section>
-        <Experience />
+        <Education />
       </section>
 
       <section>

@@ -49,11 +49,6 @@ const Home = () => {
       {/* Grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1b1e25_1px,transparent_1px),linear-gradient(to_bottom,#1b1e25_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_60%,transparent_100%)] opacity-20 pointer-events-none" />
 
-      {/* Radial coral glow — top-left anchor */}
-      <div className="absolute -top-24 -left-24 w-[480px] h-[480px] bg-portfolioAccent/5 rounded-full blur-[100px] pointer-events-none" />
-      {/* Faint glow — bottom-right */}
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[80px] pointer-events-none" />
-
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-20 relative z-10 max-w-6xl">
 
         {/* ─── LEFT — Identity & CTA ─── */}

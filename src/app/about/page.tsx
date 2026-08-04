@@ -1,20 +1,23 @@
 "use client";
 import React from "react";
-import { Code2, Sparkles, Cloud } from "lucide-react";
+import { Layout, Server, Brain } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
-      icon: <Code2 className="w-4 h-4 text-portfolioHeading" />,
-      text: "Frontend Developer specializing in Next.js",
+      icon: <Layout className="w-4 h-4" />,
+      title: "Frontend Architecture",
+      text: "Next.js, React, TypeScript, Tailwind CSS",
     },
     {
-      icon: <Sparkles className="w-4 h-4 text-portfolioHeading" />,
-      text: "Exploring Generative AI and Cloud Engineering",
+      icon: <Server className="w-4 h-4" />,
+      title: "Backend & APIs",
+      text: "FastAPI, Node.js, REST APIs, PostgreSQL",
     },
     {
-      icon: <Cloud className="w-4 h-4 text-portfolioHeading" />,
-      text: "Building modern web and Python applications",
+      icon: <Brain className="w-4 h-4" />,
+      title: "AI & Python Tooling",
+      text: "RAG Pipelines, Streamlit, Vector DBs",
     }
   ];
 
@@ -36,33 +39,36 @@ const About = () => {
           data-aos-duration="1000"
         >
           {/* Bold Intro Statement at the Top with Clean Solid Underline */}
-          <h3 className="text-2xl sm:text-3xl font-bold text-portfolioHeading leading-snug mb-8 max-w-4xl">
-            I am a <span className="text-portfolioHeading border-b-2 border-portfolioAccent pb-0.5">Software Engineering student</span> at the University of Karachi (UBIT&apos;29), specializing in front-end architecture, modern web apps, and AI integrations.
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-portfolioHeading leading-relaxed mb-8 max-w-4xl">
+            I am a <span className="text-portfolioHeading border-b-2 border-portfolioAccent pb-0.5">Frontend Developer & Software Engineer</span> specializing in crafting modern, high-performance web applications and intelligent AI integrations.
           </h3>
 
           {/* Sub Paragraphs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-base leading-relaxed text-portfolioBody mb-8">
             <p>
-              I design and deploy responsive, high-performance applications like <span className="text-portfolioHeading font-semibold">Attendify</span> (a workforce management SaaS) and full-stack systems using <span className="text-portfolioHeading font-semibold">Next.js</span>, <span className="text-portfolioHeading font-semibold">TypeScript</span>, and <span className="text-portfolioHeading font-semibold">FastAPI</span>.
+              I design and deploy responsive, user-centric applications like <span className="text-portfolioHeading font-semibold">Attendify</span> (a workforce management SaaS), utilizing modern frontend architectures like <span className="text-portfolioHeading font-semibold">Next.js</span>, <span className="text-portfolioHeading font-semibold">React</span>, and <span className="text-portfolioHeading font-semibold">TypeScript</span>.
             </p>
             <p>
-              Beyond web development, I engineer secure data encryption utilities and vector-database-powered <span className="text-portfolioHeading font-semibold">RAG chatbots</span>, converting complex software concepts into fully deployed products.
+              Beyond building interfaces, I develop robust backend APIs, engineer custom utility tools, and integrate vector-database-driven <span className="text-portfolioHeading font-semibold">RAG chatbots</span>—applying my academic training in Software Engineering at the University of Karachi to deliver practical, production-grade solutions.
             </p>
           </div>
 
           {/* Highlights as 3 Equal-Width Grid Pills BELOW Paragraphs */}
           <div className="pt-8 border-t border-portfolioMuted/15">
-            <p className="text-xs font-bold text-portfolioMuted uppercase tracking-widest mb-4">Core Focus Areas</p>
+            <p className="text-xs font-bold text-portfolioMuted uppercase tracking-widest mb-6">Technical Focus</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {highlights.map((highlight, index) => (
                 <div 
                   key={index} 
-                  className="flex items-center gap-3 px-4 py-3 bg-portfolioBg border border-portfolioMuted/15 rounded-xl text-portfolioHeading text-sm font-medium hover:border-portfolioAccent/50 hover:shadow-[0_0_15px_rgba(255,92,77,0.15)] hover:-translate-y-1 transition-all duration-300 justify-start"
+                  className="flex flex-col gap-2.5 p-5 bg-portfolioBg border border-portfolioMuted/15 rounded-xl text-portfolioHeading hover:border-portfolioAccent/50 hover:shadow-[0_0_15px_rgba(255,92,77,0.15)] hover:-translate-y-1 transition-all duration-300 justify-start"
                 >
-                  <div className="p-1 bg-portfolioCard rounded-full flex-shrink-0">
-                    {highlight.icon}
+                  <div className="flex items-center gap-2.5">
+                    <div className="p-1.5 bg-portfolioCard rounded-lg flex-shrink-0 text-portfolioAccent border border-portfolioMuted/10">
+                      {highlight.icon}
+                    </div>
+                    <span className="font-bold text-sm text-portfolioHeading">{highlight.title}</span>
                   </div>
-                  <span className="leading-tight">{highlight.text}</span>
+                  <span className="text-xs text-portfolioBody leading-normal pl-0.5">{highlight.text}</span>
                 </div>
               ))}
             </div>
