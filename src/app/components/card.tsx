@@ -33,7 +33,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title = "",
   description = "",
   repoLink = "",
-  deploymentLink = "",
   imageSrc = "",
   logoSrc = "",
   techStack = [],

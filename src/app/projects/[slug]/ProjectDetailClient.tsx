@@ -327,9 +327,11 @@ export default function ProjectDetailClient({ project }: ProjectDetailClientProp
           >
             {/* Modal Image container */}
             <div className="relative border border-portfolioMuted/20 bg-portfolioBg rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={modalImage}
+              <Image
+                src={modalImage!}
                 alt="Expanded screenshot view"
+                width={1200}
+                height={800}
                 className="max-h-[80vh] w-auto object-contain"
               />
               
