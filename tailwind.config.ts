@@ -12,10 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         customBlue: "#2a476e",
-        customPink: "#fae6ec"
-      },
-      backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right, #e0f2ff, #f3e8ff, #ffe4f2)',
+        customPink: "#fae6ec",
+        portfolioBg: "#13151A",
+        portfolioCard: "#1B1E25",
+        portfolioHeading: "#F4F4F6",
+        portfolioBody: "#9C9FA8",
+        portfolioMuted: "#65686F",
+        portfolioAccent: "#FF5C4D",
       },
     },
     fontFamily: {
