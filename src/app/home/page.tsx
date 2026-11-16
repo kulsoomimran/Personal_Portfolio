@@ -124,7 +124,7 @@ const Home = () => {
           >
             {/* Primary CTA */}
             <a
-              href="/my resume.pdf"
+              href="/Kulsoom Imran Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="relative group flex items-center gap-2.5 px-7 py-3.5 bg-portfolioAccent rounded-xl font-bold text-portfolioBg transition-all duration-300 hover:scale-[1.04] hover:bg-[#ff7063] hover:shadow-xl hover:shadow-portfolioAccent/25 overflow-hidden"
