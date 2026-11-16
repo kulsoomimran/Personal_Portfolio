@@ -151,7 +151,7 @@ const Home = () => {
             {/* Social icons */}
             <div className="flex gap-2.5">
               <a
-                href="https://www.linkedin.com/in/kulsoom-imran/"
+                href="https://www.linkedin.com/in/kulsoomimran/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
